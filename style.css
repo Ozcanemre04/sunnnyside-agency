@@ -354,6 +354,7 @@ header>nav>ul>li>a:last-of-type:hover{
 .info1> div>p{
     color: var(--Grayish-blue);
     
+    
    
 }
 
@@ -368,6 +369,7 @@ header>nav>ul>li>a:last-of-type:hover{
 .info1 p{
     margin-bottom: 69px;
     width: 350px;
+    line-height: 30px;
 }
 
 
@@ -558,12 +560,18 @@ header>a>img{
     flex-direction: column;
     
     
+    
+    
+}
+.info1{
+    width: fit-content;
 }
 
-.info p{
-    width: 277px;
+.info1> p{
+    width:90%;
+
 }
-/*footer*/
+
 
 
 
