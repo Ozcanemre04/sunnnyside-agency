@@ -270,12 +270,15 @@ header>nav>ul>li>a:last-of-type:hover{
     margin: 3em 0;
     display: block;
     line-height: 30px;
+    color: var(--Dark-grayish-blue);
 }
 
 .left-side-text h4{
     border-bottom:  2px solid var(--yellow);
     border-width: 10px;
     width: 21%;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
 .left-side-text h2{
     line-height: 49px;
@@ -291,11 +294,14 @@ header>nav>ul>li>a:last-of-type:hover{
 
 .right-side-text p {
     margin: 3em 0;
+    color: var(--Dark-grayish-blue);
 }
 .right-side-text h4{
-    border-bottom: 1px solid var(--soft-red);
+    border-bottom: 2px solid var(--soft-red);
     border-width: 10px;
-    width: 25%;
+    width: 30%;
+    text-transform: uppercase;
+    border-radius: 5px;
 }
 
 
@@ -510,8 +516,12 @@ header>a>img{
 }
 .left-side-text h4{
     width: 120px;
-    transform: translateX(70%);
+    position: relative;
     margin-bottom: 24px;
+    left: 30%;
+    
+    
+    
 
 }
 .right-side-text>h2,p{
@@ -532,8 +542,10 @@ header>a>img{
 }
 .right-side-text h4{
     width:120px;
-    transform: translateX(70%);
+   
     margin-bottom: 24px;
+    position: relative;
+    left: 30%;
 
 }
 
