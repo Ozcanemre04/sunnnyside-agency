@@ -219,17 +219,6 @@ header {
 .grid >section {
     display: flex;
     
-    
-    
-    
-    
-
-
-
-
-
-
-
 }
 
 
@@ -490,6 +479,10 @@ footer nav ul {
 }
 /*1ere section*/
 
+.grid{
+    grid-template-rows: auto;
+}
+
 .grid section{
     flex-direction: column;
 }
@@ -573,6 +566,7 @@ footer nav ul {
     left: 32%;
 
 }
+
 
 
 
