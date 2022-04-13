@@ -64,7 +64,7 @@ h3{
 }
 
 /*header*/
-.header {
+header {
     background: url(./img/image-header.jpg);
     background-size: cover;
     background-position: center;
@@ -78,14 +78,14 @@ h3{
 
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
 }
 
-header>a>img {
+.header>a>img {
     margin-left: 1.2rem;
     height: 33px;
     width: 170px;
@@ -98,14 +98,14 @@ header>a>img {
     display: none;
 }
 
-header>nav>ul {
+.header>nav>ul {
     list-style-type: none;
     display: flex;
     align-items: center;
     
 }
 
-header>nav>ul>li {
+.header>nav>ul>li {
     
     padding: 16px 40px 15px 32px;
     gap: 47px;
@@ -113,7 +113,7 @@ header>nav>ul>li {
 
 }
 
-header>nav>ul>li>a:last-of-type {
+.header>nav>ul>li>a:last-of-type {
     border: 1px solid var(--White);
     border-radius: 28px;
     padding: 16px 40px 15px 32px;
@@ -124,7 +124,7 @@ header>nav>ul>li>a:last-of-type {
 
 }
 
-header>nav>ul>li>a:last-of-type:hover{
+.header>nav>ul>li>a:last-of-type:hover{
     color: var(--White);
     background-color: transparent;
     
@@ -262,22 +262,23 @@ header>nav>ul>li>a:last-of-type:hover{
 
 .left-side-text {
 
-    width: 70%;
+    width: 445px;
 
 
 }
 
 .left-side-text p {
-    margin: 3em 0;
+    margin: 3em auto 3em auto;
     display: block;
     line-height: 30px;
     color: var(--Dark-grayish-blue);
+    letter-spacing: -0.128571px;
 }
 
 .left-side-text h4{
     border-bottom:  2px solid var(--yellow);
     border-width: 10px;
-    width: 21%;
+    width: 30%;
     text-transform: uppercase;
     border-radius: 5px;
 }
@@ -290,7 +291,7 @@ header>nav>ul>li>a:last-of-type:hover{
 
 
 .right-side-text {
-    width: 50%;
+    width: 445px;
 }
 
 .right-side-text p {
@@ -343,6 +344,7 @@ header>nav>ul>li>a:last-of-type:hover{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    letter-spacing: -0.128571px;
     
 }
 
@@ -352,9 +354,19 @@ header>nav>ul>li>a:last-of-type:hover{
     border-radius: 50%;
     margin: 44px 0 58px 0
 }
-.info1> div>p{
-    color: var(--Grayish-blue);
-    
+cite{
+color: var(--Grayish-blue);
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 25px;
+
+
+text-align: center;
+letter-spacing: -0.1px;
+
+
     
    
 }
@@ -442,7 +454,7 @@ footer nav ul {
 /*mobile*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
    /*header*/
-header nav ul {
+.header nav ul {
     display: none;
 }
 .hamburger{
@@ -468,11 +480,11 @@ header nav ul {
 
 
 
-header{
+.header{
     padding-top: 0;
 }
 
-header>a>img{
+.header>a>img{
     margin-left: 0;
     transform: translateX(-20px);
 }
@@ -487,6 +499,7 @@ header>a>img{
 }
 .cerise{
     height: 150vh;
+    background-position: center;
     
 }
 .cerise h2 {
@@ -496,15 +509,20 @@ header>a>img{
     width: 80%;
     
 }
+.orange{
+    background-position: center;
+}
 .orange h2{
     margin-top: 80%;
 
 }
 .orange p{
     width: 80%;
+ 
 }
 .left-side-text>h2,p{
     width: 90%;
+    
     
     
     
@@ -512,21 +530,21 @@ header>a>img{
 .left-side-text{
     width: fit-content;
     text-align: center;
-    margin:0 10px;
+    
 }
 
+
 .left-side-text h2{
-    margin-top: 50px;
+    margin:50px auto 0 auto ;
 }
 .left-side-text h4{
     width: 120px;
     position: relative;
     margin-bottom: 24px;
-    left: 30%;
-    
-    
-    
-
+    left: 32%;
+}
+.left-side-text p{
+    margin: 54px auto 40px auto;
 }
 .right-side-text>h2,p{
     width: 90%;
@@ -538,20 +556,24 @@ header>a>img{
     width: fit-content;
     text-align: center;
     
-    margin: 0 10px;
+    
 }
 
 .right-side-text h2{
-    margin-top: 50px;
+    margin: 50px auto 0 auto ;
+}
+.right-side-text p{
+    margin:54px auto 40px auto ;
 }
 .right-side-text h4{
     width:120px;
    
     margin-bottom: 24px;
     position: relative;
-    left: 30%;
+    left: 32%;
 
 }
+
 
 
 /*2eme section*/
@@ -570,12 +592,16 @@ header>a>img{
 }
 
 .info1>p{
-    width:fit-content;
+    width:100%;
     
 
 }
 
-
+.galery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
 
 }
